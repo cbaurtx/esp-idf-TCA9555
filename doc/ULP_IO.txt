@@ -1,0 +1,45 @@
+/* init */
+
+ulp_riscv_gpio_init( I2C_GPIO_SDA );
+ulp_riscv_gpio_init( I2C_GPIO_SCL );
+
+ulp_riscv_gpio_output_enable( I2C_GPIO_SDA );
+ulp_riscv_gpio_output_enable( I2C_GPIO_SCL );
+ulp_riscv_gpio_input_enable( I2C_GPIO_SDA );
+ulp_riscv_gpio_input_enable( I2C_GPIO_SCL );
+
+ulp_riscv_gpio_set_output_mode( I2C_GPIO_SDA, RTCIO_MODE_OUTPUT_OD );
+ulp_riscv_gpio_set_output_mode( I2C_GPIO_SCL, RTCIO_MODE_OUTPUT_OD );
+
+ulp_riscv_gpio_output_level( I2C_GPIO_SDA, 1 );
+ulp_riscv_gpio_output_level( I2C_GPIO_SCL, 1 );
+
+
+
+/* Check */
+
+    ulp_riscv_gpio_output_level( I2C_GPIO_SDA, 0 );
+    delay_us(1);
+    gpio_low = ulp_riscv_gpio_get_level( I2C_GPIO_SDA );
+
+    ulp_riscv_gpio_output_level( I2C_GPIO_SDA, 1 );
+    delay_us(1);
+    gpio_high = ulp_riscv_gpio_get_level( I2C_GPIO_SDA );
+
+
+From ESP32-S3 hardware reference
+
+To workwith RTC_IO using riscv ulp_riscv_gpio_init
+
+1. RTC_CNTL_COCPU_SEL to 0
+2. Set and reset RTC_CNTL_COCPU_CLK_FO;
+3. Set RTC_CNTL_COCPU_CLKGATE_EN
+
+As the we kwno the riscv is running so we should only need 3.
+
+
+My PCB I2C pinout
+GND INT SDA SCL ......
+
+
+

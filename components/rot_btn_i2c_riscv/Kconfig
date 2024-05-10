@@ -1,0 +1,116 @@
+#
+# @file    Kconfig
+# @author  Christof Baur
+# @date    29.03.2024
+# @version 0.1
+# @copyright   Christof Baur
+# @brief   Kconfig for rotary encoder and buttons with bit bang i2c on riscv ULP
+#
+# License: MIT
+#
+#
+
+menu "Rotary decoder & buttons i2c"
+    config AB_ENCODER
+        bool "Rotary AB encoder connected"
+        default "y"
+    help
+        Is a rotary AB encoder connected to the port expander?
+        Connect only to port 0 bit 0 and 1
+
+    config I2C_SCL_RTCIO
+        int "I2C SCL rtcio"
+        range 1 14
+        default 2
+        help
+            Number of RTC_GPIO to be used for I2C SCL signal
+
+    config I2C_SDA_RTCIO
+        int "I2C SDA rtcio"
+        range 1 14
+        default 3
+        help
+            Number of RTC_GPIO to be used for I2C SDA signal
+
+    choice
+    prompt "I2C mode"
+    default I2C_FAST
+
+    config I2C_FAST
+      bool "I2C fast mode"
+      help
+        I2C fast mode with 400kHz clock
+
+    config I2C_STANDARD
+      bool "I2C standard mode"
+      help
+        I2C standard mode with 100kHz clock
+
+    endchoice
+
+    config I2C_SLAVE_ADR
+        hex "I2C slave address"
+        range 0 0x7f
+        default 0x20
+        help
+            Number of i2c slave address, check i2c expander datasheet
+
+    config I2C_SLAVE_INREG
+        hex "I2C register address of input port"
+        range 0 0x7f
+        default 0x00
+        help
+            Number of i2c slave register address for input port, check i2c expander datasheet
+
+    config CHG_EXP_IO
+        int "I2C expander value changed"
+        range 1 14
+        default 1
+        help
+            Number of RTC_GPIO to be used for port expander int signal indicating the the exander input changed
+
+    config I2C_ARB_TIMEOUT
+        int "I2C arbitration timeout [µs]"
+        range 1 65535
+        default 100
+        help
+          Timeout in µs for I2C arbitration timeout
+
+    config WAIT_DEBOUNCE_SET
+        int "Debounce wait time [µs]"
+        range 0 65535
+        default 100
+        help
+            Debounce wait time [µs]
+
+    config ENABLE_TEST_POINT_OUT
+        bool "Enable test point out"
+        default "n"
+        help
+          Enable output for testing purposes
+
+    config TEST_POINT_RTCIO
+        int "RTCIO for test point output"
+        range 1 14
+        default 4
+        depends on ENABLE_TEST_POINT_OUT
+        help
+            Number of RTC_GPIO to be used for test point output
+
+    choice
+    prompt "I2C expander"
+    default I2C_TCA9555
+
+    config I2C_TCA9555
+      bool "I2C expander TCA9555"
+      help
+        I2C expander is TCA9555 (the only one supported, now)
+
+    config I2C_NONE
+      bool "Dummy, do not select"
+      help
+        Dummy, do not select
+
+    endchoice
+
+endmenu
