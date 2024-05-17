@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/CMakeFiles/ulp_main"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/CMakeFiles/ulp_main.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/CMakeFiles/ulp_main-complete.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-build.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-configure.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-download.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-install.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-mkdir.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-patch.rule"
+		},
+		{
+			"file" : "/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ulp_main"
+		],
+		"name" : "ulp_main"
+	}
+}

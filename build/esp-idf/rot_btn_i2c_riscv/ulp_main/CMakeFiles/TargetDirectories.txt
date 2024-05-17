@@ -1,0 +1,5 @@
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main/CMakeFiles/ulp_main.dir
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main/CMakeFiles/ld_script.dir
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main/CMakeFiles/build.dir
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main/CMakeFiles/edit_cache.dir
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main/CMakeFiles/rebuild_cache.dir

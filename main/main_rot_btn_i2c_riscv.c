@@ -1,3 +1,26 @@
+/**
+ * @file main_rot_btn_i2c_riscv.c
+ * @version 0.1
+ * @author  Cbaurtx
+ * @date    17.05.2024
+ * @copyright MIT License
+ * @brief C test application (main) of rot_btn_i2c
+ *
+ * LICENSE
+ * This file is part of rot_btn_i2c.
+ *
+ * rot_btn_i2c is free software: you can redistribute it and/or modify it
+ * under the terms of the MIT License. Check file LICENSE for details
+ *
+ * rot_btn_i2c is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * DESCRIPTION
+ * Test application for ESP32-S3 component to read a rotary encoder and 14 buttons.
+ */
+
+
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
 #include <inttypes.h>

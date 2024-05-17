@@ -1,3 +1,26 @@
+/**
+ * @file main.c
+ * @version 0.1
+ * @author  Cbaurtx
+ * @date    17.05.2024
+ * @copyright MIT License
+ * @brief C riscv ULP code of rot_btn_i2c
+ *
+ * LICENSE
+ * This file is part of rot_btn_i2c.
+ *
+ * rot_btn_i2c is free software: you can redistribute it and/or modify it
+ * under the terms of the MIT License. Check file LICENSE for details
+ *
+ * rot_btn_i2c is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * DESCRIPTION
+ * ESP32-S3 riscv ULP program to read a rotary encoder and 14 buttons.
+ */
+
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdint.h>

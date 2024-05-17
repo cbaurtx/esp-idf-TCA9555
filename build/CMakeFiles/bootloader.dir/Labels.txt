@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/iris/Development/Source/esp-idf-TCA9555/build/CMakeFiles/bootloader
+/home/iris/Development/Source/esp-idf-TCA9555/build/CMakeFiles/bootloader.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/CMakeFiles/bootloader-complete.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,13 @@
+# Target labels
+ ulp_main
+# Source files and their labels
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/CMakeFiles/ulp_main
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/CMakeFiles/ulp_main.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/CMakeFiles/ulp_main-complete.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-build.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-configure.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-download.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-install.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-mkdir.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-patch.rule
+/home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main-prefix/src/ulp_main-stamp/ulp_main-update.rule
