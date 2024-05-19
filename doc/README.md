@@ -14,7 +14,7 @@ Compilation checked with IDF version 5.1.4
 
 # Hardware Connections
 These depend on the configuration. Only 3.3V, GND, SDA and SCL need to be connected to the
-ESP32-S3. SDA and SCL need to be connected to a RTC IO. Check the schematic for details.
+ESP32-S3. SDA and SCL need to be connected to an RTC IO. Check the schematic for details.
 ![Schematic](./rot_btn.kicad_sch.png?raw=true "TCA955 port expander connections")
 
 
