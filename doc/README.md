@@ -35,3 +35,5 @@ Contributions are welcome! Please fork this repository and submit pull requests 
 For any questions or feedback, please open an issue on GitHub.
 
 
+# Acknowledgments
+ESP-IDF - Espressif IoT Development Framework
