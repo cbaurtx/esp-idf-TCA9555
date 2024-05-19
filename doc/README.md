@@ -16,7 +16,7 @@ Compilation checked with IDF version 5.1.4
 # Hardware Connections
 Depend on the configuration. Only 3.3V, GND, SDA and SCL need to be connected to the
 ESP32-S3. Check the schematic for details.
-![Alt text](relative%20rot_btn.kicad_sch.png?raw=true "TCA955 port expander connections")
+![Schematic](./rot_btn.kicad_sch.png?raw=true "TCA955 port expander connections")
 
 
 # Configure the Project
