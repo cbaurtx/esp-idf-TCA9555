@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "rot_btn_i2c_riscv",
-    "project_version":    "71ea9f3-dirty",
+    "project_version":    "de3ceea-dirty",
     "project_path":       "/home/iris/Development/Source/esp-idf-TCA9555",
     "idf_path":           "/opt/esp32/esp-adf/esp-idf",
     "build_dir":          "/home/iris/Development/Source/esp-idf-TCA9555/build",
