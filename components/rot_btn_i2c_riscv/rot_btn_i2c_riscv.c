@@ -1,8 +1,8 @@
 /**
  * @file rot_btn_i2c_riscv.c
- * @version 0.1
+ * @version 0.9
  * @author  Cbaurtx
- * @date    17.05.2024
+ * @date    19.05.2024
  * @copyright MIT License
  * @brief ESP32-S3 component of rot_btn_i2c
  *
@@ -89,7 +89,7 @@ esp_err_t rot_btn_i2c_read(uint32_t *p_key_code, int timeout) {
   if (xTaskNotifyWait(0x00, ULONG_MAX, p_key_code, timeout) == pdTRUE) {
     ESP_LOGD(TAG, "---------------");
     ESP_LOGD(TAG, "ULP i2c error = 0x%x", ulp_i2c_err);
-    ESP_LOGD(TAG, "ULP data = 0x%x", ulp_data);
+    ESP_LOGD(TAG, "ULP btn_data = 0x%x", ulp_btn_data);
     ESP_LOGD(TAG, "ULP evt = 0x%x", ulp_evt);
     ESP_LOGD(TAG, "ULP count_m = %d", ulp_count_m);
   } else {
@@ -123,7 +123,7 @@ static void IRAM_ATTR rot_btn_isr(void *arg)
   /* notify blocked task*/
   xHigherPriorityTaskWoken = pdFALSE;
   xTaskNotifyFromISR(recv_task,
-                     (ulp_count_m & 0x3ffff) | ((ulp_data & 0xfffc) << 16),
+                     (ulp_count_m & 0x3ffff) | ((ulp_btn_data) << 16),
                      eSetValueWithoutOverwrite, &xHigherPriorityTaskWoken);
   portYIELD_FROM_ISR();
 }

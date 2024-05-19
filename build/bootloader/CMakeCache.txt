@@ -251,7 +251,7 @@ IDF_TOOLCHAIN:STRING=gcc
 PROJECT_SOURCE_DIR:UNINITIALIZED=/home/iris/Development/Source/esp-idf-TCA9555
 
 //No help, variable specified on the command line.
-PYTHON:UNINITIALIZED=/home/iris/.espressif/python_env/idf5.1_py3.11_env/bin/python
+PYTHON:UNINITIALIZED=/home/iris/.espressif/python_env/idf5.1_py3.12_env/bin/python
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
@@ -306,7 +306,7 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/iris/Development/Source/esp-idf-TCA9555/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=29
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
 //Path to CMake executable.
@@ -437,7 +437,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Git
-FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.44.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.45.0()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Have include stddef.h

@@ -1,8 +1,8 @@
 /**
  * @file main_rot_btn_i2c_riscv.c
- * @version 0.1
+ * @version 0.9
  * @author  Cbaurtx
- * @date    17.05.2024
+ * @date    19.05.2024
  * @copyright MIT License
  * @brief C test application (main) of rot_btn_i2c
  *
@@ -40,7 +40,7 @@ void app_main(void) {
     err = rot_btn_i2c_read(&key_code, timeout);
 
     ESP_LOGI(TAG, "Read error %x", (int)err);
-    ESP_LOGI(TAG, "Read kex_code %x", key_code);
+    ESP_LOGI(TAG, "Read key_code %x", key_code);
     //  vTaskDelay(1);
   };
 

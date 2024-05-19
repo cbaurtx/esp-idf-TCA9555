@@ -1,0 +1,406 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1750
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e0c
+entry 0x403c9908
+[0;32mI (27) boot: ESP-IDF v5.1.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 19 2024 10:52:03[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a788h ( 42888) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001a7b0 vaddr=3fc91500 size=02704h (  9988) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001cebc vaddr=40374000 size=0315ch ( 12636) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=182b8h ( 99000) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=000382e0 vaddr=4037715c size=0a29ch ( 41628) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (169) cpu_start: Pro cpu up.[0m
+[0;32mI (169) cpu_start: Starting app cpu, entry point is 0x40375274[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (188) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (188) cpu_start: Application information:[0m
+[0;32mI (191) cpu_start: Project name:     rot_btn_i2c_riscv[0m
+[0;32mI (196) cpu_start: App version:      71ea9f3-dirty[0m
+[0;32mI (202) cpu_start: Compile time:     May 19 2024 10:51:11[0m
+[0;32mI (208) cpu_start: ELF file SHA256:  41b1711d7f399959...[0m
+[0;32mI (214) cpu_start: ESP-IDF:          v5.1.4[0m
+[0;32mI (219) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (223) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (228) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (233) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (240) heap_init: At 3FC94458 len 000552B8 (340 KiB): DRAM[0m
+[0;32mI (246) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (253) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (266) spi_flash: detected chip: generic[0m
+[0;32mI (270) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (288) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (294) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) app_start: Starting scheduler on CPU0[0m
+[0;32mI (306) app_start: Starting scheduler on CPU1[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (316) rot_btn_i2c_riscv.c: Loaded riscv ULP[0m
+[0;32mI (326) rot_btn_i2c_riscv.c: Started riscv ULP[0m
+[0;32mI (10326) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (10326) main_rot_btn_i2c_riscv.c: Read kex_code 0[0m
+[0;32mI (14426) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (14426) main_rot_btn_i2c_riscv.c: Read kex_code 20001[0m
+[0;32mI (14436) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (14436) main_rot_btn_i2c_riscv.c: Read kex_code 20002[0m
+[0;32mI (14456) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (14456) main_rot_btn_i2c_riscv.c: Read kex_code 20003[0m
+[0;32mI (14496) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (14496) main_rot_btn_i2c_riscv.c: Read kex_code 20004[0m
+[0;32mI (14566) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (14566) main_rot_btn_i2c_riscv.c: Read kex_code 20005[0m
+[0;32mI (14626) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (14626) main_rot_btn_i2c_riscv.c: Read kex_code 20006[0m
+[0;32mI (14686) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (14686) main_rot_btn_i2c_riscv.c: Read kex_code 20007[0m
+[0;32mI (15076) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15076) main_rot_btn_i2c_riscv.c: Read kex_code 20006[0m
+[0;32mI (15116) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15116) main_rot_btn_i2c_riscv.c: Read kex_code 20005[0m
+[0;32mI (15156) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15156) main_rot_btn_i2c_riscv.c: Read kex_code 20004[0m
+[0;32mI (15196) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15196) main_rot_btn_i2c_riscv.c: Read kex_code 20003[0m
+[0;32mI (15396) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15396) main_rot_btn_i2c_riscv.c: Read kex_code 20004[0m
+[0;32mI (15416) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15416) main_rot_btn_i2c_riscv.c: Read kex_code 20005[0m
+[0;32mI (15436) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15436) main_rot_btn_i2c_riscv.c: Read kex_code 20006[0m
+[0;32mI (15466) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15466) main_rot_btn_i2c_riscv.c: Read kex_code 20007[0m
+[0;32mI (15526) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15526) main_rot_btn_i2c_riscv.c: Read kex_code 20008[0m
+[0;32mI (15826) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15826) main_rot_btn_i2c_riscv.c: Read kex_code 20007[0m
+[0;32mI (15836) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15836) main_rot_btn_i2c_riscv.c: Read kex_code 20006[0m
+[0;32mI (15846) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15846) main_rot_btn_i2c_riscv.c: Read kex_code 20005[0m
+[0;32mI (15856) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15856) main_rot_btn_i2c_riscv.c: Read kex_code 20004[0m
+[0;32mI (15866) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15866) main_rot_btn_i2c_riscv.c: Read kex_code 20003[0m
+[0;32mI (15876) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15876) main_rot_btn_i2c_riscv.c: Read kex_code 20002[0m
+[0;32mI (15906) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15906) main_rot_btn_i2c_riscv.c: Read kex_code 20001[0m
+[0;32mI (15956) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15956) main_rot_btn_i2c_riscv.c: Read kex_code 20000[0m
+[0;32mI (15976) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (15976) main_rot_btn_i2c_riscv.c: Read kex_code 1ffff[0m
+[0;32mI (16016) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (16016) main_rot_btn_i2c_riscv.c: Read kex_code 1fffe[0m
+[0;32mI (16076) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (16076) main_rot_btn_i2c_riscv.c: Read kex_code 1fffd[0m
+[0;32mI (16106) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (16106) main_rot_btn_i2c_riscv.c: Read kex_code 1fffc[0m
+[0;32mI (16626) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (16626) main_rot_btn_i2c_riscv.c: Read kex_code 5fffc[0m
+[0;32mI (16756) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (16756) main_rot_btn_i2c_riscv.c: Read kex_code 1fffc[0m
+[0;32mI (16936) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (16936) main_rot_btn_i2c_riscv.c: Read kex_code 5fffc[0m
+[0;32mI (17046) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (17046) main_rot_btn_i2c_riscv.c: Read kex_code 1fffc[0m
+[0;32mI (17196) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (17196) main_rot_btn_i2c_riscv.c: Read kex_code 5fffc[0m
+[0;32mI (17316) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (17316) main_rot_btn_i2c_riscv.c: Read kex_code 1fffc[0m
+[0;32mI (17496) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (17496) main_rot_btn_i2c_riscv.c: Read kex_code 5fffc[0m
+[0;32mI (17616) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (17616) main_rot_btn_i2c_riscv.c: Read kex_code 1fffc[0m
+[0;32mI (17746) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (17746) main_rot_btn_i2c_riscv.c: Read kex_code 5fffc[0m
+[0;32mI (17866) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (17866) main_rot_btn_i2c_riscv.c: Read kex_code 1fffc[0m
+[0;32mI (18056) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (18056) main_rot_btn_i2c_riscv.c: Read kex_code 5fffc[0m
+[0;32mI (18196) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (18196) main_rot_btn_i2c_riscv.c: Read kex_code 1fffc[0m
+[0;32mI (18366) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (18366) main_rot_btn_i2c_riscv.c: Read kex_code 1fffd[0m
+[0;32mI (18386) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (18386) main_rot_btn_i2c_riscv.c: Read kex_code 1fffe[0m
+[0;32mI (18416) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (18416) main_rot_btn_i2c_riscv.c: Read kex_code 1ffff[0m
+[0;32mI (18446) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (18446) main_rot_btn_i2c_riscv.c: Read kex_code 20000[0m
+[0;32mI (19086) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19086) main_rot_btn_i2c_riscv.c: Read kex_code 20001[0m
+[0;32mI (19096) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19096) main_rot_btn_i2c_riscv.c: Read kex_code 20002[0m
+[0;32mI (19106) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19106) main_rot_btn_i2c_riscv.c: Read kex_code 20003[0m
+[0;32mI (19116) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19116) main_rot_btn_i2c_riscv.c: Read kex_code 20004[0m
+[0;32mI (19126) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19126) main_rot_btn_i2c_riscv.c: Read kex_code 20005[0m
+[0;32mI (19156) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19156) main_rot_btn_i2c_riscv.c: Read kex_code 20006[0m
+[0;32mI (19186) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19186) main_rot_btn_i2c_riscv.c: Read kex_code 20007[0m
+[0;32mI (19206) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19206) main_rot_btn_i2c_riscv.c: Read kex_code 20008[0m
+[0;32mI (19226) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19226) main_rot_btn_i2c_riscv.c: Read kex_code 20009[0m
+[0;32mI (19236) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19236) main_rot_btn_i2c_riscv.c: Read kex_code 2000a[0m
+[0;32mI (19256) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19256) main_rot_btn_i2c_riscv.c: Read kex_code 2000b[0m
+[0;32mI (19266) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19266) main_rot_btn_i2c_riscv.c: Read kex_code 2000c[0m
+[0;32mI (19266) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19266) main_rot_btn_i2c_riscv.c: Read kex_code 2000d[0m
+[0;32mI (19286) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19286) main_rot_btn_i2c_riscv.c: Read kex_code 2000e[0m
+[0;32mI (19306) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (19306) main_rot_btn_i2c_riscv.c: Read kex_code 2000f[0m
+[0;32mI (20076) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (20076) main_rot_btn_i2c_riscv.c: Read kex_code 20010[0m
+[0;32mI (20596) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (20596) main_rot_btn_i2c_riscv.c: Read kex_code 20011[0m
+[0;32mI (21226) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (21226) main_rot_btn_i2c_riscv.c: Read kex_code 20012[0m
+[0;32mI (21836) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (21836) main_rot_btn_i2c_riscv.c: Read kex_code 20013[0m
+[0;32mI (22446) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (22446) main_rot_btn_i2c_riscv.c: Read kex_code 20012[0m
+[0;32mI (23106) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (23106) main_rot_btn_i2c_riscv.c: Read kex_code 20011[0m
+[0;32mI (23826) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (23826) main_rot_btn_i2c_riscv.c: Read kex_code 20010[0m
+[0;32mI (24576) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (24576) main_rot_btn_i2c_riscv.c: Read kex_code 2000f[0m
+[0;32mI (25036) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25036) main_rot_btn_i2c_riscv.c: Read kex_code 20010[0m
+[0;32mI (25226) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25226) main_rot_btn_i2c_riscv.c: Read kex_code 20011[0m
+[0;32mI (25266) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25266) main_rot_btn_i2c_riscv.c: Read kex_code 20012[0m
+[0;32mI (25406) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25406) main_rot_btn_i2c_riscv.c: Read kex_code 20013[0m
+[0;32mI (25436) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25436) main_rot_btn_i2c_riscv.c: Read kex_code 20014[0m
+[0;32mI (25456) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25456) main_rot_btn_i2c_riscv.c: Read kex_code 20015[0m
+[0;32mI (25466) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25466) main_rot_btn_i2c_riscv.c: Read kex_code 20016[0m
+[0;32mI (25496) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25496) main_rot_btn_i2c_riscv.c: Read kex_code 20017[0m
+[0;32mI (25536) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (25536) main_rot_btn_i2c_riscv.c: Read kex_code 20018[0m
+[0;32mI (26026) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26026) main_rot_btn_i2c_riscv.c: Read kex_code 20017[0m
+[0;32mI (26076) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26076) main_rot_btn_i2c_riscv.c: Read kex_code 20016[0m
+[0;32mI (26186) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26186) main_rot_btn_i2c_riscv.c: Read kex_code 20015[0m
+[0;32mI (26196) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26196) main_rot_btn_i2c_riscv.c: Read kex_code 20014[0m
+[0;32mI (26216) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26216) main_rot_btn_i2c_riscv.c: Read kex_code 20013[0m
+[0;32mI (26216) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26216) main_rot_btn_i2c_riscv.c: Read kex_code 20012[0m
+[0;32mI (26236) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26236) main_rot_btn_i2c_riscv.c: Read kex_code 20011[0m
+[0;32mI (26376) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26376) main_rot_btn_i2c_riscv.c: Read kex_code 20012[0m
+[0;32mI (26406) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26406) main_rot_btn_i2c_riscv.c: Read kex_code 20013[0m
+[0;32mI (26426) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26426) main_rot_btn_i2c_riscv.c: Read kex_code 20014[0m
+[0;32mI (26436) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26436) main_rot_btn_i2c_riscv.c: Read kex_code 20015[0m
+[0;32mI (26446) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26446) main_rot_btn_i2c_riscv.c: Read kex_code 20016[0m
+[0;32mI (26456) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26456) main_rot_btn_i2c_riscv.c: Read kex_code 20017[0m
+[0;32mI (26466) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26466) main_rot_btn_i2c_riscv.c: Read kex_code 20018[0m
+[0;32mI (26476) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26476) main_rot_btn_i2c_riscv.c: Read kex_code 20019[0m
+[0;32mI (26486) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26496) main_rot_btn_i2c_riscv.c: Read kex_code 2001a[0m
+[0;32mI (26516) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26516) main_rot_btn_i2c_riscv.c: Read kex_code 2001b[0m
+[0;32mI (26586) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26586) main_rot_btn_i2c_riscv.c: Read kex_code 2001a[0m
+[0;32mI (26606) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26606) main_rot_btn_i2c_riscv.c: Read kex_code 20019[0m
+[0;32mI (26636) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26636) main_rot_btn_i2c_riscv.c: Read kex_code 20018[0m
+[0;32mI (26656) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26656) main_rot_btn_i2c_riscv.c: Read kex_code 20017[0m
+[0;32mI (26666) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26666) main_rot_btn_i2c_riscv.c: Read kex_code 20016[0m
+[0;32mI (26666) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26676) main_rot_btn_i2c_riscv.c: Read kex_code 20015[0m
+[0;32mI (26676) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26686) main_rot_btn_i2c_riscv.c: Read kex_code 20014[0m
+[0;32mI (26686) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26696) main_rot_btn_i2c_riscv.c: Read kex_code 20013[0m
+[0;32mI (26706) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26706) main_rot_btn_i2c_riscv.c: Read kex_code 20012[0m
+[0;32mI (26816) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26816) main_rot_btn_i2c_riscv.c: Read kex_code 20013[0m
+[0;32mI (26836) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26836) main_rot_btn_i2c_riscv.c: Read kex_code 20014[0m
+[0;32mI (26856) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26856) main_rot_btn_i2c_riscv.c: Read kex_code 20015[0m
+[0;32mI (26866) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26866) main_rot_btn_i2c_riscv.c: Read kex_code 20016[0m
+[0;32mI (26866) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26876) main_rot_btn_i2c_riscv.c: Read kex_code 20017[0m
+[0;32mI (26876) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26886) main_rot_btn_i2c_riscv.c: Read kex_code 20016[0m
+[0;32mI (26896) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26896) main_rot_btn_i2c_riscv.c: Read kex_code 20017[0m
+[0;32mI (26936) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (26936) main_rot_btn_i2c_riscv.c: Read kex_code 20018[0m
+[0;32mI (27086) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27086) main_rot_btn_i2c_riscv.c: Read kex_code 20017[0m
+[0;32mI (27606) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27606) main_rot_btn_i2c_riscv.c: Read kex_code 20018[0m
+[0;32mI (27616) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27616) main_rot_btn_i2c_riscv.c: Read kex_code 20019[0m
+[0;32mI (27616) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27626) main_rot_btn_i2c_riscv.c: Read kex_code 2001a[0m
+[0;32mI (27636) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27636) main_rot_btn_i2c_riscv.c: Read kex_code 2001b[0m
+[0;32mI (27646) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27646) main_rot_btn_i2c_riscv.c: Read kex_code 2001d[0m
+[0;32mI (27666) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27666) main_rot_btn_i2c_riscv.c: Read kex_code 2001f[0m
+[0;32mI (27696) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27696) main_rot_btn_i2c_riscv.c: Read kex_code 20020[0m
+[0;32mI (27726) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27726) main_rot_btn_i2c_riscv.c: Read kex_code 20021[0m
+[0;32mI (27736) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27736) main_rot_btn_i2c_riscv.c: Read kex_code 20022[0m
+[0;32mI (27746) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27746) main_rot_btn_i2c_riscv.c: Read kex_code 20023[0m
+[0;32mI (27766) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27766) main_rot_btn_i2c_riscv.c: Read kex_code 20024[0m
+[0;32mI (27826) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (27826) main_rot_btn_i2c_riscv.c: Read kex_code 20025[0m
+[0;32mI (28366) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28366) main_rot_btn_i2c_riscv.c: Read kex_code 20026[0m
+[0;32mI (28376) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28376) main_rot_btn_i2c_riscv.c: Read kex_code 20027[0m
+[0;32mI (28376) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28376) main_rot_btn_i2c_riscv.c: Read kex_code 20028[0m
+[0;32mI (28396) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28396) main_rot_btn_i2c_riscv.c: Read kex_code 20029[0m
+[0;32mI (28396) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28406) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (28406) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28416) main_rot_btn_i2c_riscv.c: Read kex_code 2002b[0m
+[0;32mI (28416) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28426) main_rot_btn_i2c_riscv.c: Read kex_code 2002c[0m
+[0;32mI (28456) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28456) main_rot_btn_i2c_riscv.c: Read kex_code 2002d[0m
+[0;32mI (28506) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28506) main_rot_btn_i2c_riscv.c: Read kex_code 2002e[0m
+[0;32mI (28816) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28826) main_rot_btn_i2c_riscv.c: Read kex_code 2002d[0m
+[0;32mI (28956) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28956) main_rot_btn_i2c_riscv.c: Read kex_code 2002c[0m
+[0;32mI (28976) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28976) main_rot_btn_i2c_riscv.c: Read kex_code 2002b[0m
+[0;32mI (28986) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28986) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (28986) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (28996) main_rot_btn_i2c_riscv.c: Read kex_code 20029[0m
+[0;32mI (29006) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29006) main_rot_btn_i2c_riscv.c: Read kex_code 20028[0m
+[0;32mI (29206) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29206) main_rot_btn_i2c_riscv.c: Read kex_code 20029[0m
+[0;32mI (29226) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29226) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (29236) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29236) main_rot_btn_i2c_riscv.c: Read kex_code 2002b[0m
+[0;32mI (29276) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29276) main_rot_btn_i2c_riscv.c: Read kex_code 2002c[0m
+[0;32mI (29386) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29386) main_rot_btn_i2c_riscv.c: Read kex_code 2002b[0m
+[0;32mI (29436) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29436) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (29476) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29476) main_rot_btn_i2c_riscv.c: Read kex_code 20029[0m
+[0;32mI (29486) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29486) main_rot_btn_i2c_riscv.c: Read kex_code 20028[0m
+[0;32mI (29486) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29496) main_rot_btn_i2c_riscv.c: Read kex_code 20027[0m
+[0;32mI (29496) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29506) main_rot_btn_i2c_riscv.c: Read kex_code 20026[0m
+[0;32mI (29506) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29516) main_rot_btn_i2c_riscv.c: Read kex_code 20025[0m
+[0;32mI (29536) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29536) main_rot_btn_i2c_riscv.c: Read kex_code 20024[0m
+[0;32mI (29676) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29676) main_rot_btn_i2c_riscv.c: Read kex_code 20025[0m
+[0;32mI (29696) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29696) main_rot_btn_i2c_riscv.c: Read kex_code 20026[0m
+[0;32mI (29706) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29706) main_rot_btn_i2c_riscv.c: Read kex_code 20027[0m
+[0;32mI (29716) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29716) main_rot_btn_i2c_riscv.c: Read kex_code 20028[0m
+[0;32mI (29736) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29736) main_rot_btn_i2c_riscv.c: Read kex_code 20029[0m
+[0;32mI (29776) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (29776) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (30486) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (30486) main_rot_btn_i2c_riscv.c: Read kex_code 6002a[0m
+[0;32mI (30616) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (30616) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (30706) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (30706) main_rot_btn_i2c_riscv.c: Read kex_code 6002a[0m
+[0;32mI (30826) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (30826) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (30946) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (30946) main_rot_btn_i2c_riscv.c: Read kex_code 6002a[0m
+[0;32mI (31056) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (31056) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (31176) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (31176) main_rot_btn_i2c_riscv.c: Read kex_code 6002a[0m
+[0;32mI (31296) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (31296) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (31406) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (31406) main_rot_btn_i2c_riscv.c: Read kex_code 6002a[0m
+[0;32mI (31536) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (31536) main_rot_btn_i2c_riscv.c: Read kex_code 2002a[0m
+[0;32mI (31986) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (31986) main_rot_btn_i2c_riscv.c: Read kex_code 2002b[0m
+[0;32mI (31996) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (31996) main_rot_btn_i2c_riscv.c: Read kex_code 2002c[0m
+[0;32mI (32016) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (32016) main_rot_btn_i2c_riscv.c: Read kex_code 2002d[0m
+[0;32mI (32026) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (32026) main_rot_btn_i2c_riscv.c: Read kex_code 2002e[0m
+[0;32mI (32046) main_rot_btn_i2c_riscv.c: Read error 0[0m
+[0;32mI (32046) main_rot_btn_i2c_riscv.c: Read kex_code 2002f[0m

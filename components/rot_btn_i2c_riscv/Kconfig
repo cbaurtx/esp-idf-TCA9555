@@ -17,6 +17,7 @@ menu "Rotary decoder & buttons i2c"
     help
         Is a rotary AB encoder connected to the port expander?
         Connect only to port 0 bit 0 and 1
+        If no assumes two buttons emulating the encoder
 
     config I2C_SCL_RTCIO
         int "I2C SCL rtcio"
@@ -72,7 +73,7 @@ menu "Rotary decoder & buttons i2c"
     config I2C_ARB_TIMEOUT
         int "I2C arbitration timeout [µs]"
         range 1 65535
-        default 100
+        default 200
         help
           Timeout in µs for I2C arbitration timeout
 

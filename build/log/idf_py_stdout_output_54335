@@ -1,0 +1,27 @@
+[1/14] Performing build step for 'bootloader'
+[1/1] cd /home/iris/Development/Source/esp-idf-TCA9555/build/bootloader/esp-idf/esptool_py && /home/iris/.espressif/python_env/idf5.1_py3.12_env/bin/python /opt/esp32/esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/iris/Development/Source/esp-idf-TCA9555/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/14] No install step for 'bootloader'
+[3/14] Completed 'bootloader'
+[4/14] Performing build step for 'ulp_main'
+[1/5] Building C object CMakeFiles/ulp_main.dir/home/iris/Development/Source/esp-idf-TCA9555/components/rot_btn_i2c_riscv/ulp/riscv_main.c.obj
+[2/5] Linking C executable ulp_main.elf
+[3/5] Generating ulp_main.bin
+[4/5] Generating ulp_main.sym
+[5/5] Generating ulp_main.ld, ulp_main.h
+[5/14] No install step for 'ulp_main'
+[6/14] Completed 'ulp_main'
+[7/14] Generating ../../ulp_main.bin.S
+[8/14] Building ASM object esp-idf/rot_btn_i2c_riscv/CMakeFiles/__idf_rot_btn_i2c_riscv.dir/__/__/ulp_main.bin.S.obj
+[9/14] Building C object esp-idf/rot_btn_i2c_riscv/CMakeFiles/__idf_rot_btn_i2c_riscv.dir/rot_btn_i2c_riscv.c.obj
+[10/14] Linking C static library esp-idf/rot_btn_i2c_riscv/librot_btn_i2c_riscv.a
+[11/14] Generating ld/sections.ld
+[12/14] Linking CXX executable rot_btn_i2c_riscv.elf
+[13/14] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/iris/Development/Source/esp-idf-TCA9555/build/rot_btn_i2c_riscv.bin
+[14/14] cd /home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/esptool_py && /home/iris/.espressif/python_env/idf5.1_py3.12_env/bin/python /opt/esp32/esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/iris/Development/Source/esp-idf-TCA9555/build/partition_table/partition-table.bin /home/iris/Development/Source/esp-idf-TCA9555/build/rot_btn_i2c_riscv.bin
+rot_btn_i2c_riscv.bin binary size 0x325b0 bytes. Smallest app partition is 0x100000 bytes. 0xcda50 bytes (80%) free.

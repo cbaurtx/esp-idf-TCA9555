@@ -1,0 +1,79 @@
+[0/1] Re-running CMake...
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/asio does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/cbor does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/coap does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/expat does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/libsodium does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/nghttp does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/tinyusb does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/iris/Development/Source/esp-idf-TCA9555/sdkconfig
+-- App "rot_btn_i2c_riscv" version: 71ea9f3-dirty
+-- Adding linker script /home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Adding linker script /home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/rot_btn_i2c_riscv/ulp_main/ulp_main.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread rot_btn_i2c_riscv sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /opt/esp32/esp-adf/esp-idf/components/app_trace /opt/esp32/esp-adf/esp-idf/components/app_update /opt/esp32/esp-adf/esp-idf/components/bootloader /opt/esp32/esp-adf/esp-idf/components/bootloader_support /opt/esp32/esp-adf/esp-idf/components/bt /opt/esp32/esp-adf/esp-idf/components/cmock /opt/esp32/esp-adf/esp-idf/components/console /opt/esp32/esp-adf/esp-idf/components/cxx /opt/esp32/esp-adf/esp-idf/components/driver /opt/esp32/esp-adf/esp-idf/components/efuse /opt/esp32/esp-adf/esp-idf/components/esp-tls /opt/esp32/esp-adf/esp-idf/components/esp_adc /opt/esp32/esp-adf/esp-idf/components/esp_app_format /opt/esp32/esp-adf/esp-idf/components/esp_coex /opt/esp32/esp-adf/esp-idf/components/esp_common /opt/esp32/esp-adf/esp-idf/components/esp_eth /opt/esp32/esp-adf/esp-idf/components/esp_event /opt/esp32/esp-adf/esp-idf/components/esp_gdbstub /opt/esp32/esp-adf/esp-idf/components/esp_hid /opt/esp32/esp-adf/esp-idf/components/esp_http_client /opt/esp32/esp-adf/esp-idf/components/esp_http_server /opt/esp32/esp-adf/esp-idf/components/esp_https_ota /opt/esp32/esp-adf/esp-idf/components/esp_https_server /opt/esp32/esp-adf/esp-idf/components/esp_hw_support /opt/esp32/esp-adf/esp-idf/components/esp_lcd /opt/esp32/esp-adf/esp-idf/components/esp_local_ctrl /opt/esp32/esp-adf/esp-idf/components/esp_mm /opt/esp32/esp-adf/esp-idf/components/esp_netif /opt/esp32/esp-adf/esp-idf/components/esp_netif_stack /opt/esp32/esp-adf/esp-idf/components/esp_partition /opt/esp32/esp-adf/esp-idf/components/esp_phy /opt/esp32/esp-adf/esp-idf/components/esp_pm /opt/esp32/esp-adf/esp-idf/components/esp_psram /opt/esp32/esp-adf/esp-idf/components/esp_ringbuf /opt/esp32/esp-adf/esp-idf/components/esp_rom /opt/esp32/esp-adf/esp-idf/components/esp_system /opt/esp32/esp-adf/esp-idf/components/esp_timer /opt/esp32/esp-adf/esp-idf/components/esp_wifi /opt/esp32/esp-adf/esp-idf/components/espcoredump /opt/esp32/esp-adf/esp-idf/components/esptool_py /opt/esp32/esp-adf/esp-idf/components/fatfs /opt/esp32/esp-adf/esp-idf/components/freertos /opt/esp32/esp-adf/esp-idf/components/hal /opt/esp32/esp-adf/esp-idf/components/heap /opt/esp32/esp-adf/esp-idf/components/http_parser /opt/esp32/esp-adf/esp-idf/components/idf_test /opt/esp32/esp-adf/esp-idf/components/ieee802154 /opt/esp32/esp-adf/esp-idf/components/json /opt/esp32/esp-adf/esp-idf/components/log /opt/esp32/esp-adf/esp-idf/components/lwip /home/iris/Development/Source/esp-idf-TCA9555/main /opt/esp32/esp-adf/esp-idf/components/mbedtls /opt/esp32/esp-adf/esp-idf/components/mqtt /opt/esp32/esp-adf/esp-idf/components/newlib /opt/esp32/esp-adf/esp-idf/components/nvs_flash /opt/esp32/esp-adf/esp-idf/components/openthread /opt/esp32/esp-adf/esp-idf/components/partition_table /opt/esp32/esp-adf/esp-idf/components/perfmon /opt/esp32/esp-adf/esp-idf/components/protobuf-c /opt/esp32/esp-adf/esp-idf/components/protocomm /opt/esp32/esp-adf/esp-idf/components/pthread /home/iris/Development/Source/esp-idf-TCA9555/components/rot_btn_i2c_riscv /opt/esp32/esp-adf/esp-idf/components/sdmmc /opt/esp32/esp-adf/esp-idf/components/soc /opt/esp32/esp-adf/esp-idf/components/spi_flash /opt/esp32/esp-adf/esp-idf/components/spiffs /opt/esp32/esp-adf/esp-idf/components/tcp_transport /opt/esp32/esp-adf/esp-idf/components/touch_element /opt/esp32/esp-adf/esp-idf/components/ulp /opt/esp32/esp-adf/esp-idf/components/unity /opt/esp32/esp-adf/esp-idf/components/usb /opt/esp32/esp-adf/esp-idf/components/vfs /opt/esp32/esp-adf/esp-idf/components/wear_levelling /opt/esp32/esp-adf/esp-idf/components/wifi_provisioning /opt/esp32/esp-adf/esp-idf/components/wpa_supplicant /opt/esp32/esp-adf/esp-idf/components/xtensa
+-- Configuring done (13.9s)
+-- Generating done (1.9s)
+-- Build files have been written to: /home/iris/Development/Source/esp-idf-TCA9555/build
+[1/17] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main_rot_btn_i2c_riscv.c.obj
+[2/17] Linking C static library esp-idf/main/libmain.a
+[3/17] Performing build step for 'ulp_main'
+[1/5] Building C object CMakeFiles/ulp_main.dir/home/iris/Development/Source/esp-idf-TCA9555/components/rot_btn_i2c_riscv/ulp/riscv_main.c.obj
+[2/5] Linking C executable ulp_main.elf
+[3/5] Generating ulp_main.bin
+[4/5] Generating ulp_main.sym
+[5/5] Generating ulp_main.ld, ulp_main.h
+[4/17] No install step for 'ulp_main'
+[5/17] Completed 'ulp_main'
+[6/17] Generating ../../ulp_main.bin.S
+[7/17] Building ASM object esp-idf/rot_btn_i2c_riscv/CMakeFiles/__idf_rot_btn_i2c_riscv.dir/__/__/ulp_main.bin.S.obj
+[8/17] Building C object esp-idf/rot_btn_i2c_riscv/CMakeFiles/__idf_rot_btn_i2c_riscv.dir/rot_btn_i2c_riscv.c.obj
+[9/17] Linking C static library esp-idf/rot_btn_i2c_riscv/librot_btn_i2c_riscv.a
+[10/17] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/asio does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/cbor does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/coap does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/expat does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/libsodium does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/nghttp does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /opt/esp32/esp-adf/esp-idf/components/tinyusb does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /home/iris/Development/Source/esp-idf-TCA9555/sdkconfig
+Compiler supported targets: xtensa-esp32s3-elf
+
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- App "bootloader" version: v5.1.4
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script /opt/esp32/esp-adf/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /opt/esp32/esp-adf/esp-idf/components/bootloader /opt/esp32/esp-adf/esp-idf/components/bootloader_support /opt/esp32/esp-adf/esp-idf/components/efuse /opt/esp32/esp-adf/esp-idf/components/esp_app_format /opt/esp32/esp-adf/esp-idf/components/esp_common /opt/esp32/esp-adf/esp-idf/components/esp_hw_support /opt/esp32/esp-adf/esp-idf/components/esp_rom /opt/esp32/esp-adf/esp-idf/components/esp_system /opt/esp32/esp-adf/esp-idf/components/esptool_py /opt/esp32/esp-adf/esp-idf/components/freertos /opt/esp32/esp-adf/esp-idf/components/hal /opt/esp32/esp-adf/esp-idf/components/log /opt/esp32/esp-adf/esp-idf/components/bootloader/subproject/main /opt/esp32/esp-adf/esp-idf/components/bootloader/subproject/components/micro-ecc /opt/esp32/esp-adf/esp-idf/components/newlib /opt/esp32/esp-adf/esp-idf/components/partition_table /opt/esp32/esp-adf/esp-idf/components/soc /opt/esp32/esp-adf/esp-idf/components/spi_flash /opt/esp32/esp-adf/esp-idf/components/xtensa
+-- Configuring done (10.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/iris/Development/Source/esp-idf-TCA9555/build/bootloader
+[1/2] cd /home/iris/Development/Source/esp-idf-TCA9555/build/bootloader/esp-idf/esptool_py && /home/iris/.espressif/python_env/idf5.1_py3.12_env/bin/python /opt/esp32/esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/iris/Development/Source/esp-idf-TCA9555/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[11/17] No install step for 'bootloader'
+[12/17] Completed 'bootloader'
+[13/17] Generating ld/sections.ld
+[14/17] Linking CXX executable rot_btn_i2c_riscv.elf
+[15/17] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/iris/Development/Source/esp-idf-TCA9555/build/rot_btn_i2c_riscv.bin
+[16/17] cd /home/iris/Development/Source/esp-idf-TCA9555/build/esp-idf/esptool_py && /home/iris/.espressif/python_env/idf5.1_py3.12_env/bin/python /opt/esp32/esp-adf/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/iris/Development/Source/esp-idf-TCA9555/build/partition_table/partition-table.bin /home/iris/Development/Source/esp-idf-TCA9555/build/rot_btn_i2c_riscv.bin
+rot_btn_i2c_riscv.bin binary size 0x325a0 bytes. Smallest app partition is 0x100000 bytes. 0xcda60 bytes (80%) free.

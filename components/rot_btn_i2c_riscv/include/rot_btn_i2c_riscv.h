@@ -1,8 +1,8 @@
 /**
  * @file rot_btn_i2c_riscv.h
- * @version 0.1
+ * @version 0.9
  * @author  Cbaurtx
- * @date    17.05.2024
+ * @date    19.05.2024
  * @copyright MIT License
  * @brief Include file of rot_btn_i2c ESP32-S3 component
  *
