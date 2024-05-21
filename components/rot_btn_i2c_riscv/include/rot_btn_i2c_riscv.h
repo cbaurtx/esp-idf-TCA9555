@@ -26,9 +26,11 @@
 
 #include "esp_err.h"
 
+/* events */
 #define BTN_PUSHED 0x01
 #define BTN_RELEASED 0x02
-#define ENC 0x04
+#define ENC_UP 0x04
+#define ENC_DOWN 0x08
 
 void rot_btn_i2c_init(void);
 

@@ -288,12 +288,12 @@ int main(void) {
           if (rot_data == 0x03) {        // AB encoder transitioned to detend
             if (prev_rot_data == 0x01) { // rotated clockwise
               count_m++;
-              evt = ENC;
+              evt = ENC_UP;
               ulp_riscv_wakeup_main_processor();
               }
             if (prev_rot_data == 0x02) { // rotated counterclockwise
               count_m--;
-              evt = ENC;
+              evt = ENC_DOWN;
               ulp_riscv_wakeup_main_processor();
               }
             }
@@ -305,12 +305,12 @@ int main(void) {
               INPUT_PORT0) & 0x0003)) {  // data did not change, no bounce
               if (rot_data == 0x01) {
                 count_m--;
-                evt = ENC;
+                evt = ENC_DOWN;
                 ulp_riscv_wakeup_main_processor();
                 }
               if (rot_data == 0x02) {
                 count_m++;
-                evt = ENC;
+                evt = ENC_UP;
                 ulp_riscv_wakeup_main_processor();
                 }
               };

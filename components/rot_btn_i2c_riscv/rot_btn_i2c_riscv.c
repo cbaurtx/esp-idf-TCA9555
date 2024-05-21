@@ -104,10 +104,7 @@ static void init_ulp_program(void) {
       ulp_main_bin_start, (ulp_main_bin_end - ulp_main_bin_start)));
   ESP_LOGI(TAG, "Loaded riscv ULP");
 
-  // ESP_ERROR_CHECK(ulp_riscv_config_and_run());
-
   ESP_ERROR_CHECK(ulp_riscv_run());
-  // SET_PERI_REG_MASK(RTC_CNTL_COCPU_CTRL_REG, RTC_CNTL_COCPU_CLKGATE_EN);
   ESP_LOGI(TAG, "Started riscv ULP");
 }
 
@@ -123,7 +120,7 @@ static void IRAM_ATTR rot_btn_isr(void *arg)
   /* notify blocked task*/
   xHigherPriorityTaskWoken = pdFALSE;
   xTaskNotifyFromISR(recv_task,
-                     (ulp_count_m & 0x3ffff) | ((ulp_btn_data) << 16),
+                     (ulp_count_m & 0x3ffff) | ((ulp_btn_data) << 18),
                      eSetValueWithoutOverwrite, &xHigherPriorityTaskWoken);
   portYIELD_FROM_ISR();
 }
